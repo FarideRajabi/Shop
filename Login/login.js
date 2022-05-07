@@ -1,4 +1,11 @@
+const DEFAULT_PERSON = {
+    name: 'farideh',
+    pass: '123',
+};
+
+
 function particular() {
+
     var name = document.getElementById("inputName").value;
     var pass = document.getElementById("inputPass").value;
     var repetPass = document.getElementById("repeatPassInput").value;
@@ -28,19 +35,24 @@ function particular() {
     }
 
     if (name.length >= 8 && person.pass === person.repetPass && person.pass != "") {
+        DEFAULT_PERSON.name = name;
+        DEFAULT_PERSON.pass = pass;
         alert("ثبت نام با موفقیت انجام شد آیا ادامه می دهید؟");
         window.location = "login.html";
 
     }
-    document.getElementById("loginBtn").addEventListener("click", function () {
-            login(person);
-        }
-    );
+
 }
 
-function login(person) {
+function login() {
+    var name = document.getElementById("inputName").value;
+    var pass = document.getElementById("inputPass").value;
 
-    window.location = "/../Login/buy.html";
+    if(DEFAULT_PERSON.name == name && DEFAULT_PERSON.pass==pass){
+        window.location = "/../Login/buy.html";
+    }else{
+        //ثبت نام نکردید
+    }
     // var loginName = document.getElementById("loginName").value;
     // var loginPass = document.getElementById("loginPass").value;
 
