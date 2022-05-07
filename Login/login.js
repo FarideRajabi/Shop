@@ -2,8 +2,6 @@ const DEFAULT_PERSON = {
     name: 'farideh',
     pass: '123',
 };
-
-
 function particular() {
 
     var name = document.getElementById("inputName").value;
@@ -45,11 +43,12 @@ function particular() {
 }
 
 function login() {
-    var name = document.getElementById("inputName").value;
-    var pass = document.getElementById("inputPass").value;
+    var name = document.getElementById("loginName").value;
+    var pass = document.getElementById("loginPass").value;
 
     if(DEFAULT_PERSON.name == name && DEFAULT_PERSON.pass==pass){
-        window.location = "/../Login/buy.html";
+        localStorage.setItem("isAuthorized", 'true');
+        window.location = "../home/buy.html";
     }else{
         //ثبت نام نکردید
     }
