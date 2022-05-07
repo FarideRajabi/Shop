@@ -1,0 +1,526 @@
+/* @font-face {
+	font-family:"B Roya";
+	src: url(fonts/font.woff) format('woff');
+} */
+html{
+	overflow-x: hidden;
+}
+
+.header, .header>div , form, .title, .container,.title1, .sale ,.publicity4, .bord , .bgCut-rate , .first, .second, .thrid{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family:B Roya ,"B Roya";
+}
+
+.header{
+	align-items: baseline;
+	align-items: flex-start;
+	justify-content:space-around;
+	line-height: 1px!important;
+	padding: 5px 0;
+	margin: 0 4vw;
+	flex-wrap: wrap;
+}
+
+.header img{
+	margin: 15px 0 15px 2vw!important;
+}
+
+.header a{
+	padding:5px 10px ;
+	margin:30px 8px 5px;
+	font-size: 18px;
+	padding-left: 0.5vw;
+	border-right: 0.1vw solid #ddd;
+	height: 5px;
+
+}
+
+ .fa , .fas{
+	 font-size: 25px!important;
+	 margin-top: 20px!important;
+ }
+
+@media screen and (max-width:1200px) {
+	.title{
+		display: none;
+	}
+}
+
+@media screen and (min-width:1100px) {
+	.fa-bars{
+		display: none!important;
+	}
+}
+.header a:first-child{
+	border: 1px solid #0082fd;
+	border-radius: 0.5em;
+	padding: 12px 4px;
+	margin-top: 22px;
+	direction: ltr;
+	color: #0082fd;
+	font-style: normal;
+}
+
+.search-input{
+	padding: 0 5px 0 14vw;
+	background: #eee;
+	border: 1px solid #ddd;
+	font-family:"B Roya";
+	height: 35px;
+	margin-top: 15px;
+}
+.search-button{
+	background: #0082fd;
+	border: 1px solid #0082fd ;
+	color: #eee;
+	font-family:"B Roya";
+	height: 37px;
+	margin: 15px 0 0 5vw;
+	float: left;
+}
+#shopping-cart{
+	background-color: #0082fd;
+	color: #fff;
+	font-size: 10px;
+	border-radius: 0.4em;
+	padding: 2px 5px;
+	
+}
+
+.fa-bars{
+	border: none;
+	border-bottom: 0.1vw solid lightsteelblue;
+	padding: 0 6vw 10px;
+	width: 88%;
+	margin-bottom: 10px;
+	font-size: 30px!important;
+}
+
+.title {
+	text-align: center;
+	border-bottom: 0.1vw solid lightsteelblue;
+	height: 2vw;
+	padding-bottom: 1%;
+	font-family:"B Roya";
+}
+
+.title div{
+	font-style: normal;
+	font-size: 12px;
+	line-break:strict;
+	flex-wrap: nowrap;
+	flex-basis: content;
+}
+
+.dropdiv {
+	color: rgb(41, 35, 35);
+	padding-left: 25px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropdown-content {
+	display: none!important;
+	position: absolute;
+	background-color: #f9f9f9;
+	max-width: 500px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content ul {
+	color: black;
+	text-decoration: none;
+	display: block;
+	float: right;
+	list-style-type: none;
+	
+  }
+  
+  .dropdown-content ul:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+	display: block!important;
+  }
+
+  .container {
+	flex-wrap: nowrap;
+	margin: 2vw 7.5vw;
+	width: 82vw;
+	border-radius: 0.6em;
+	height: 18vw;
+	background-image:url("assets/homeImage/Header-0120.jpg") ;
+	background-size:100%;
+	-webkit-animation:text 36s -4s step-end infinite forwards running ;
+	animation:text 36s -4s step-end infinite forwards running ;
+}
+
+@-webkit-keyframes text{
+	0%{
+		background-image:url("assets/homeImage/Header-0120.jpg") ;
+	}
+	20%{
+		background-image: url("assets/homeImage/lavazem-khonegi-0120.jpg");
+	}
+	40%{
+		background-image: url("assets/homeImage/varzesh-0211.jpg");
+	}
+	60%{
+		background-image: url("assets/homeImage/slider-speaker-0120.jpg");
+	}
+	80%{
+		background-image: url("assets/homeImage/slider-1021.gif");
+	}
+	100%{
+		background-image: url("assets/homeImage/slider-0201.jpg");
+	}
+	0%{
+		background-image:url("assets/homeImage/Header-0120.jpg") ;
+	}
+}
+
+@keyframes text{
+	0%{
+		background-image:url("assets/homeImage/Header-0120.jpg") ;
+	}
+	16%{
+		background-image: url("assets/homeImage/lavazem-khonegi-0120.jpg");
+	}
+	32%{
+		background-image: url("assets/homeImage/varzesh-0211.jpg");
+	}
+	48%{
+		background-image: url("assets/homeImage/slider-speaker-0120.jpg");
+	}
+	62%{
+		background-image: url("assets/homeImage/slider-1021.gif");
+	}
+	84%{
+		background-image: url("assets/homeImage/slider-0201.jpg");
+	}
+}
+
+
+.title1{
+	overflow-x:scroll;
+	font-size: 1vw;
+    justify-content: stretch;
+	margin: auto 7% auto 8%;
+	font-family: "B Roya";
+}
+
+
+.instalment{
+	text-align:center;
+	font-style: normal;
+	font-family:B Roya , "B Roya", serif;
+	display: flex;
+	flex-direction: column;
+	margin: 6px;
+}
+.instalment img{
+	border-radius: 0.5em;
+}
+.text1{
+	background-color:navy;
+	padding:5px 6px;
+}
+
+.text2{
+	background-color:limegreen;
+	padding:5px 22px;
+	
+}
+.text1, .text2{
+	color:white;
+	height: 85px;
+	font-size:30px;
+	font-weight: 700;
+	text-align:center;
+	border-radius: 0.2em;
+	font-family:B Roya , "B Roya", serif;
+}
+.text1-1 , .text2-1{
+	margin:0.3vw 0.4vw;
+}
+.fa-angle-right{
+	color: limegreen;
+}
+.fa-angle-left{
+	color:navy;
+}
+
+.fa-angle-left , .fa-angle-right{
+	margin:0 13px 3px;
+	position: relative;
+	font-size: 35px!important;
+	font-weight: 900!important;
+}
+.fa-angle-right {
+	-webkit-animation: move 2s 0s infinite alternate-reverse both running;
+	animation: move 2s 0s infinite alternate-reverse both running;
+}
+@-webkit-keyframes move {
+	0% {
+		right: -30px;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	100% {
+		right: 30px;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+
+	}
+}
+
+@keyframes move {
+	0% {
+		right: -30px;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	100%{
+		right: 30px;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+}
+.fa-angle-left{
+	-webkit-animation: wave 2s 0s infinite alternate-reverse both running ;
+	animation: wave 2s 0s infinite alternate-reverse both running ;
+}
+@-webkit-keyframes wave {
+	0% {
+		right: 30px;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	100% {
+		right: -30px;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+
+	}
+}
+
+@keyframes wave {
+	0% {
+		right: 30px;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+	100%{
+		right: -30px;
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
+}
+
+
+.cut-rate{
+	font-size:30px;
+	font-weight: 900;
+	color: #ffd700;
+	
+}
+.bgCut-rate{
+	background-color: #fff;
+	border-radius: 0.6em;
+	width: 85%;
+	height: 380px;
+	margin: 2vw 0;
+	padding: 30px 0;
+	overflow: hidden;
+	justify-content:start;
+}
+.cut{
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: 100px!important;
+	padding:30px 0;
+	line-height: 0;
+	margin-right: 0!important;
+	font-family: "B Roya";
+}
+#timer{
+	font-size: 3vw;
+	font-family:B Roya;
+}
+
+.back{
+	background:url(assets/title/back.jpg) 0 /cover repeat border-box;
+	height: 490px!important;
+
+}
+.back>div>img{
+	width: 200px;
+	height: 300px;
+	margin: 0;
+}
+.crop{
+	border-radius: 0.6em;
+	border: 1px solid #eee;
+	padding:2px 10px ;
+	margin:15px 0 15px 12px;
+	width:380px;
+	height:260px;
+	font: normal bold 15px/20px B Roya, serif;
+	
+}
+.back1 img{
+	margin-right:20px auto;
+}
+
+
+.bord{
+	border-bottom:1px solid lightsteelblue;
+	height: 420px;
+	justify-content: start;
+	overflow: hidden;
+}
+.bord img{
+	height: 180px;
+	width: 180px;
+	margin: 3px 22px;
+
+}
+
+.sale{
+	margin:2vw 7vw;
+	width:35vw;
+	height: 17vw;
+	justify-content:start;
+}
+
+ .sale img:first-child{
+	 float: right;
+	 border-radius: 0 0.5em 6em 0;
+	 margin-left: 2vw;
+ }
+ .sale img:last-child{
+   border-radius: 6em 0 0 0.5em;
+ }
+
+
+section>div{
+	padding:0.5vw;
+	text-align: center;
+}
+h2{
+	margin-top:6vw!important;
+	font-size: 2vw;
+	display:inline-block;
+}
+h2, .bord{
+	padding:0 8%;
+	font-family: "B Roya";
+}
+ 
+ i{
+	text-decoration: none;
+	 color:#101214;
+ }
+
+
+
+.priceoof{
+	text-decoration:line-through;
+	font-size:1vw;
+	margin-right:6vw ;
+	color: dimgrey;
+
+}
+.percent{
+	background-color:yellow;
+	float: left;
+	font-size:1.2vw;
+}
+#buy{
+	background-color: #0082fd;
+	color: #fff;
+	border-radius: 0.3em;
+	border: none;
+	font-size: 18px;
+	padding: 5px 52px;
+	text-align: center;
+	text-decoration: none;
+}
+ i>p+p, .topic{
+	margin:0 4vw;
+	font-size:1.2vw ;
+	color: #000;
+}
+i>span{
+	text-align: right;
+	margin: 0.5vw;
+
+}
+span+p{
+	text-align: left;
+}
+.name{
+	font-family:B Roya , "B Roya", serif;
+	height:50px;
+	text-align: justify;
+}
+#timer{
+	color: #fff;
+	font-size: 2vw;
+}
+
+footer {
+	font-family:B Roya , "B Roya", serif;
+	text-align: right;
+	direction: rtl;
+}
+ footer ul{
+	list-style-type: none;
+	margin-bottom:6vw ;
+}
+ .first li, .thrid li {
+	margin:1.5vw 3vw;
+}
+ footer li{
+	 font-size: 1vw;
+ }
+footer li:first-child{
+	font-size: 1.3vw;
+}
+
+footer p{
+	margin-left: 1vw;
+}
+footer img{
+	width: 3vw;
+	height: 3vw;
+}
+.second{
+	background-color: #eeeeee;
+	height: 7vw;
+	padding: 3.5vw;
+	font-size:1.5vw ;
+}
+.second1{
+	margin-right:4vw;
+}
+
+.thrid img{
+	margin:3vw 3vw 0 1.5vw;
+}
+
+
+.fourth p+p{
+	margin:1vw 7vw;
+	color: grey;
+	font-size: 1vw;
+}
+.final{
+	text-align:center ;
+	margin: 3vw 30vw;
+	font-size: 1.2vw;
+}
