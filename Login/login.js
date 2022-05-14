@@ -1,8 +1,9 @@
 const DEFAULT_PERSON = {
-    name: 'farideh',
+    name: 'faridehrajabi',
     pass: '123',
 };
 
+var isLogin = false;
 
 function particular() {
 
@@ -37,31 +38,31 @@ function particular() {
     if (name.length >= 8 && person.pass === person.repetPass && person.pass != "") {
         DEFAULT_PERSON.name = name;
         DEFAULT_PERSON.pass = pass;
+         isLogin = true;
         alert("ثبت نام با موفقیت انجام شد آیا ادامه می دهید؟");
-        window.location = "login.html";
+        window.location = "E:/js/shop/home/timche.html";
 
     }
 
 }
 
 function login() {
-    var name = document.getElementById("inputName").value;
-    var pass = document.getElementById("inputPass").value;
+    var name = document.getElementById("loginName").value;
+    var pass = document.getElementById("loginPass").value;
 
     if(DEFAULT_PERSON.name == name && DEFAULT_PERSON.pass==pass){
-        window.location = "/../Login/buy.html";
+        isLogin = true;
+        window.location = "E:/js/shop/home/timche.html";
     }else{
-        //ثبت نام نکردید
+        alert("ثبت نام نکردید!");
+         window.location = "signin.html";
     }
-    // var loginName = document.getElementById("loginName").value;
-    // var loginPass = document.getElementById("loginPass").value;
+}
+function checkLogin(){
 
-// if(loginName === name && loginPass === pass){
-
-//     window.location = "timche.html";
-// }
-// else{
-//    document.getElementById("loginError").innerHTML = "نام کابری و کلمه عبور اشتباه است"
-//    document.getElementById("loginError").style.color = "#ff0000"
-// }
+if(isLogin == false ){
+          window.location = "E:/js/shop/Login/login.html";
+      }else{
+           window.location = "buy.html";
+      }
 }

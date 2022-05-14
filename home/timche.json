@@ -1,0 +1,110 @@
+{
+    "corpOff":[
+                 {
+                    "id" : "1",
+                    "name" : "ریسه مدل ستاره بزرگ",
+                    "price": "280000",
+                    "precentOff": "37%",
+                    "priceOff" : "175,000",
+                    "image" : "../assets/img/cut/media-6098d116d8b0b.webp"
+            },
+            {
+                "id" : "2",
+                "name" : "کیف دستی دخترانه مدل فشن",
+                "price": "90000",
+                "precentOff": "17%",
+                "priceOff" : "75000",
+                "image" : "../assets/img/cut/media-6212a0292a55b.webp"
+        },
+        {
+            "id" : "3",
+            "name" : "روغن کلزا فرابکر 1500میلی لیتر",
+            "price": "180000",
+            "precentOff": "30%",
+            "priceOff" : "131000",
+            "image" : "../assets/img/cut/media-60a353cadd485.webp"
+        },
+        {
+            "id" : "4",
+            "name" : "زیتون شور 1 کیلو گرم",
+            "price": "105000",
+            "precentOff": "25%",
+            "priceOff" : "79000",
+            "image" : "../assets/img/cut/media-624ec727b27df.webp"
+        }
+        
+    ],
+
+    "mobailCorp":[
+        {
+           "id" : "1",
+           "name" : "گوشی موبایل شیائومی مدل Redmi",
+           "price": "3700000",
+           "precentOff": "3%",
+           "priceOff" : "3700000",
+           "image" : "../assets/img/cellPhone/1.jpg"
+   },
+   {
+       "id" : "2",
+       "name" : "گوشی موبایل هوآوی مدل Y6s JAT-L29 ",
+       "price": "4450000",
+       "precentOff": "9%",
+       "priceOff" : "4050000",
+       "image" : "../assets/img/cellPhone/2m.jpg"
+},
+{
+   "id" : "3",
+   "name" : "گوشی موبایل هوآوی مدل Y8p AQM-LX1 ",
+   "price": "5400000",
+   "precentOff": "7%",
+   "priceOff" : "5000000",
+   "image" : "../assets/img/cellPhone/3m.jpg"
+},
+{
+   "id" : "4",
+   "name" : "گوشی موبایل هوآوی مدل Y8s JKM-LX1",
+   "price": "6200000",
+   "precentOff": "5%",
+   "priceOff" : "5900000",
+   "image" : "../assets/img/cellPhone/4m.jpg"
+}
+
+],
+
+
+"casualCorp":[
+    {
+       "id" : "1",
+       "name" : "پلیور یقه گرد مردانه تامی مدل هیلفیگر",
+       "price": "400000",
+       "precentOff": "50%",
+       "priceOff" : "200000",
+       "image" : "../assets/img/jacet/p1.jpg"
+},
+{
+   "id" : "2",
+   "name" : "پلیور یقه گرد مردانه تامی",
+   "price": "400000",
+   "precentOff": "50%",
+   "priceOff" : "200000",
+   "image" : "../assets/img/jacet/p2.jpg"
+},
+{
+"id" : "3",
+"name" : "پلیور یقه گرد مردانه تامی",
+"price": "400000",
+"precentOff": "50%",
+"priceOff" : "200000",
+"image" : "../assets/img/jacet/p3.jpg"
+},
+{
+"id" : "4",
+"name" : "پلیور یقه هفت مردانه تامی مدل هیلفیگر",
+"price": "400000",
+"precentOff": "50%",
+"priceOff" : "200000",
+"image" : "../assets/img/jacet/p4.jpg"
+}
+
+]
+}

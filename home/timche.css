@@ -12,7 +12,7 @@ html {
     overflow-x: hidden;
 }
 
-.header, .header > div, form, .title, .container, .title1, .sale, .publicity4, .bord, .bgCut-rate, .first, .second, .thrid {
+.header, .header > div, form, .title, .container, .title1, .sale, .publicity4, .bord, #bgCut-rate, .first, .second, .thrid {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -60,7 +60,7 @@ html {
     }
 }
 
-.header a:first-child {
+.header>div>div+a{
     border: 1px solid #0082fd;
     border-radius: 0.5em;
     padding: 12px 4px;
@@ -89,13 +89,48 @@ html {
     float: left;
 }
 
-#shopping-cart {
-    background-color: #0082fd;
-    color: #fff;
-    font-size: 10px;
-    border-radius: 0.4em;
-    padding: 2px 5px;
+.cart{
+    margin-top: 30px;
+}
+.cart__item{
+    clear: both;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #0082fd;
+    line-height: 1px;
+}
+.cart__item-title{
+    width: 300px;
+}
+.qty{
+    margin: 0 50px;
+}
 
+.buy{
+    cursor: pointer;
+}
+
+.shoppingCart{
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    padding: 25px;
+}
+
+
+ .price{
+     margin-bottom: 30px;
+     text-align: center;
+    color: rgb(55, 175, 85);
+}
+
+.delete{
+    background-color: darkred;
+    color: #fff;
+    padding:15px 5px 8px;
+   
 }
 
 .fa-bars {
@@ -239,19 +274,19 @@ html {
 
 .text1 {
     background-color: navy;
-    padding: 5px 6px;
+    padding: 7.5px 8px;
 }
 
 .text2 {
     background-color: limegreen;
-    padding: 5px 22px;
+    padding: 7.5px 22px;
 
 }
 
 .text1, .text2 {
     color: white;
-    height: 85px;
-    font-size: 30px;
+    height: 80px;
+    font-size: 20px;
     font-weight: 700;
     text-align: center;
     border-radius: 0.2em;
@@ -259,7 +294,7 @@ html {
 }
 
 .text1-1, .text2-1 {
-    margin: 0.3vw 0.4vw;
+    margin: 0.3vw 0.6vw 0;
 }
 
 .fa-angle-right {
@@ -271,7 +306,7 @@ html {
 }
 
 .fa-angle-left, .fa-angle-right {
-    margin: 0 13px 3px;
+    margin: 0 13px 5px!important;
     position: relative;
     font-size: 35px !important;
     font-weight: 900 !important;
@@ -349,7 +384,7 @@ html {
 
 }
 
-.bgCut-rate {
+#bgCut-rate {
     background-color: #fff;
     border-radius: 0.6em;
     width: 85%;
@@ -472,7 +507,7 @@ i {
     font-size: 1.2vw;
 }
 
-#buy {
+.buy {
     background-color: #0082fd;
     color: #fff;
     border-radius: 0.3em;

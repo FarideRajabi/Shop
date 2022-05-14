@@ -5,11 +5,12 @@
     <link rel="stylesheet" href="timche.css">
     <link rel="stylesheet" href="../assets/fonts/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="timche.js"></script>
+    <script src="E:/js/shop/Login/login.js"></script>
 </head>
 <body>
 <header>
     <img width="100%" alt=""
-         src="https://static.timcheh.com/uploads/manual/images/homepage/desktop/1401/header-desktop-0120.gif">
+         src="../assets/img/homeImage/header-desktop-0120.gif">
 </header>
 
 <div class="header">
@@ -20,12 +21,20 @@
     </form>
 
     <div>
-        <a>!در تیمچه بفروش</a>
-        <a class="fas fa-chess-king" title="کارت هدیه"></a>
-        <a class="fa fa-gift" aria-hidden="true" title="کارت هدیه"></a>
-        <a href="/Login/login.html">ورود/ثبت نام</a>
-        <a href="buy.html" class="fa fa-shopping-cart" aria-hidden="true"><span id="shopping-cart">0</span></a>
+        
+            <div class="dropdown">
+                <div class="dropdiv shopping"><a onclick="checkLogin()" class="fa fa-shopping-cart" aria-hidden="true"></a></div>
+                <div class="dropdown-content StoreCart">
+                    <div class="shoppingCart" id="shoppingCart"></div>
+                    <div class="price"></div>
+                </div>
+            </div>
+            <a>!در تیمچه بفروش</a>
+            <a class="fas fa-chess-king" title="کارت هدیه"></a>
+            <a class="fa fa-gift" aria-hidden="true" title="کارت هدیه"></a>
+            <a href="/Login/login.html">ورود/ثبت نام</a>
     </div>
+        
 </div>
 
 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -578,38 +587,7 @@
         <img src="../assets/img/title/t1.png" width="430px" height="430px">
     </div>
 
-    <div class="bgCut-rate">
-        <i class="crop"><img src="../assets/img/cut/media-6098d116d8b0b.webp" alt="ریسه مدل ستاره بزرگ عرض 3 متر">
-            <p class="name">ریسه مدل ستاره بزرگ عرض 3 متر</p>
-            <span class="priceoof">280,000</span><span class="percent">37%</span>
-            <p>175,000تومان</p>
-            <a id="buy" onclick="buy('ریسه مدل ستاره بزرگ عرض 3 متر', 175,000)">افزودن به سبد خرید</a>
-        </i>
-
-        <i class="crop"><img src="../assets/img/cut/media-6212a0292a55b.webp"
-                             alt="کیف دستی دخترانه مدل فشن طرح شیشیه ای ساده ">
-            <p class="name">کیف دستی دخترانه مدل فشن طرح شیشیه ای ساده</p>
-            <span class="priceoof">90,000</span><span class="percent">17%</span>
-            <p>75,000تومان</p>
-            <a id="buy" onclick="buy('کیف دستی دخترانه مدل فشن طرح شیشیه ای ساده',75,000)">افزودن به سبد خرید</a>
-        </i>
-
-        <i class="crop"><img src="../assets/img/cut/media-60a353cadd485.webp"
-                             alt="روغن کلزا فرابکر ورؤن حجم 1500میلی لیتر">
-            <p class="name">روغن کلزا فرابکر ورؤن حجم 1500میلی لیتر</p>
-            <span class="priceoof">188,000</span><span class="percent">30%</span>
-            <p>131,000تومان</p>
-            <a id="buy" onclick="buy('روغن کلزا فرابکر ورؤن حجم 1500میلی لیتر',131,000)">افزودن به سبد خرید</a>
-        </i>
-
-        <i class="crop"><img src="../assets/img/cut/media-624ec727b27df.webp"
-                             alt="زیتون شور با هسته طارم مقدار 1 کیلوگرم">
-            <p class="name">زیتون شور با هسته طارم مقدار 1 کیلوگرم</p>
-            <span class="priceoof">105,000</span><span class="percent">25%</span>
-            <p>79,000تومان</p>
-            <a id="buy" onclick="buy('زیتون شور با هسته طارم مقدار 1 کیلوگرم',79,000)">افزودن به سبد خرید</a>
-        </i>
-    </div>
+    <div id="bgCut-rate"></div>
 </section>
 
 
@@ -620,80 +598,9 @@
 
 
 <h2>گوشی موبایل</h2>
-
-<section class="bord">
-    <i class="crop"><img src="../assets/img/cellPhone/1.jpg"
-                         alt="گوشی موبایل شیائومی مدل Redmi 9C M2006C3MG دو سیم‌ کارت، ظرفیت 32 گیگابایت با رم 2 گیگابایت">
-        <p class="name">گوشی موبایل شیائومی مدل Redmi 9C M2006C3MG دو سیم‌ کارت، ظرفیت 32 گیگابایت با رم 2 گیگابایت</p>
-        <span class="percent">3%</span><span class="priceoof">3,700,000</span>
-        <p>3,600,000تومان</p>
-        <a id="buy"
-           onclick="buy('گوشی موبایل شیائومی مدل Redmi 9C M2006C3MG دو سیم‌ کارت، ظرفیت 32 گیگابایت با رم 2 گیگابایت',3,600,000)">افزودن
-            به سبد خرید</a>
-    </i>
-
-    <i class="crop"><img src="../assets/img/cellPhone/2m.jpg"
-                         alt="گوشی موبایل هوآوی مدل Y6s JAT-L29 دو سیم‌کارت، ظرفیت 64 گیگابایت با رم 3 گیگابایت">
-        <p class="name">گوشی موبایل هوآوی مدل Y6s JAT-L29 دو سیم‌کارت، ظرفیت 64 گیگابایت با رم 3 گیگابایت</p>
-        <span class="percent">9%</span><span class="priceoof">4,450,000</span>
-        <p>4,050,000تومان</p>
-        <a id="buy"
-           onclick="buy('گوشی موبایل هوآوی مدل Y6s JAT-L29 دو سیم‌کارت، ظرفیت 64 گیگابایت با رم 3 گیگابایت',4,050,000)">افزودن
-            به سبد خرید</a>
-    </i>
-
-    <i class="crop"><img src="../assets/img/cellPhone/3m.jpg"
-                         alt="گوشی موبایل هوآوی مدل Y8p AQM-LX1 دو سیم کارت، ظرفیت 128 گیگابایت با رم 6 گیگابایت">
-        <p class="name">گوشی موبایل هوآوی مدل Y8p AQM-LX1 دو سیم کارت، ظرفیت 128 گیگابایت با رم 6 گیگابایت</p>
-        <span class="percent">7%</span><span class="priceoof">5,400,000</span>
-        <p>5,000,000تومان</p>
-        <a id="buy"
-           onclick="buy('گوشی موبایل هوآوی مدل Y8p AQM-LX1 دو سیم کارت، ظرفیت 128 گیگابایت با رم 6 گیگابایت',5,000,000)">افزودن
-            به سبد خرید</a>
-    </i>
-
-    <i class="crop"><img src="../assets/img/cellPhone/4m.jpg"
-                         alt="گوشی موبایل هوآوی مدل Y8s JKM-LX1 دو سیم‌کارت، ظرفیت 64 گیگابایت با رم 4 گیگابایت">
-        <p class="name">گوشی موبایل هوآوی مدل Y8s JKM-LX1 دو سیم‌کارت، ظرفیت 64 گیگابایت با رم 4 گیگابایت</p>
-        <span class="percent">5%</span><span class="priceoof">6,200,000</span>
-        <p>5,900,000تومان</p>
-        <a id="buy"
-           onclick="buy('گوشی موبایل هوآوی مدل Y8s JKM-LX1 دو سیم‌کارت، ظرفیت 64 گیگابایت با رم 4 گیگابایت',5,900,000)">افزودن
-            به سبد خرید</a>
-    </i>
-</section>
+<section class="bord" id="cellPhone"> </section>
 <h2>ژاکت و پلیور مردانه</h2>
-
-<section class="bord">
-    <i class="crop"><img src="../assets/img/jacet/p1.jpg" alt="پلیور یقه گرد مردانه تامی مدل هیلفیگر رنگ مشکی">
-        <p class="name">پلیور یقه گرد مردانه تامی مدل هیلفیگر رنگ مشکی</p>
-        <span class="percent">%50</span><span class="priceoof">400,000</span>
-        <p>200,000تومان</p>
-        <a id="buy" onclick="buy('پلیور یقه گرد مردانه تامی مدل هیلفیگر رنگ مشکی',200,000)">افزودن به سبد خرید</a>
-    </i>
-
-    <i class="crop"><img src="../assets/img/jacet/p2.jpg" alt="پلیور یقه گرد مردانه تامی مدل هیلفیگر رنگ سرمه ای">
-        <p class="name">پلیور یقه گرد مردانه تامی مدل هیلفیگر رنگ سرمه ای</p>
-        <span class="percent">%50</span><span class="priceoof">400,000</span>
-        <p>200,000تومان</p>
-        <a id="buy" onclick="buy('پلیور یقه گرد مردانه تامی مدل هیلفیگر رنگ سرمه ای',200,000)">افزودن به سبد خرید</a>
-    </i>
-
-    <i class="crop"><img src="../assets/img/jacet/p3.jpg" alt="پلیور یقه گرد مردانه تامی مدل هیلفیگر رنگ آبی نفتی">
-        <p class="name">پلیور یقه گرد مردانه تامی مدل هیلفیگر رنگ آبی نفتی</p>
-        <span class="percent">%50</span><span class="priceoof">400,000</span>
-        <p>200,000تومان</p>
-        <a id="buy" onclick="buy('پلیور یقه گرد مردانه تامی مدل هیلفیگر رنگ آبی نفتی',200,000)">افزودن به سبد خرید</a>
-    </i>
-
-    <i class="crop"><img src="../assets/img/jacet/p4.jpg" alt="پلیور یقه هفت مردانه تامی مدل هیلفیگر رنگ طوسی روشن">
-        <p class="name">پلیور یقه هفت مردانه تامی مدل هیلفیگر رنگ طوسی روشن</p>
-        <span class="percent">%50</span><span class="priceoof">400,000</span>
-        <p>200,000تومان</p>
-        <a id="buy" onclick="buy('پلیور یقه هفت مردانه تامی مدل هیلفیگر رنگ طوسی روشن',200,000)">افزودن به سبد خرید</a>
-    </i>
-
-</section>
+<section class="bord" id="casualCorp"></section>
 
 
 <footer>
